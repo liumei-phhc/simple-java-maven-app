@@ -1,10 +1,11 @@
+sh label: '', script: '''Jenkinsfile (Declarative Pipeline)
 pipeline {
-    agent { docker 'maven:3.3.3' }
+    agent { docker \'maven:3.3.3\' }
     stages {
-        stage('build') {
+        stage(\'build\') {
             steps {
-                sh 'mvn --version'
+                sh \'mvn --version\'
             }
         }
     }
-}
+}'''
